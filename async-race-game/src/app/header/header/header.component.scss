@@ -1,0 +1,28 @@
+@import "../../../assets/styles/variables.scss";
+
+.header {
+  &-nav {
+    &__list {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+    }
+
+    &__item {
+      padding: 5px 10px;
+      background-color: $accent-color;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $accent-hover-color;
+      }
+    }
+
+    &__link {
+      color: $dark-font-color;
+    }
+  }
+}
